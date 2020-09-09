@@ -5,11 +5,13 @@ import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-//Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа.
+/**
+ * Дан текстовый файл, содержащий целые числа. Удалить из него все четные числа.
+ */
 public class Task1 {
     public static void main(String[] args) {
-        File fileIn = new File("files/digits");
-        File fileOut = new File("files/digisOUT");
+        File fileIn = new File("files/digitsIn");
+        File fileOut = new File("files/digitsOut");
         StringBuilder sb = new StringBuilder();
 
         try (
